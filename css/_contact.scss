@@ -1,0 +1,381 @@
+* {
+  font-family: "Cinzel", serif;
+}
+
+#contact-header {
+  // position: fixed;
+  background-color: #f4f7fc;
+
+  .logo {
+    width: 30%;
+    margin-top: -10px;
+  }
+  .nav-menu {
+    display: none;
+    ul {
+      li {
+        a {
+          text-decoration: none;
+          color: black;
+          font-family: "Cinzel", serif;
+          padding-inline: 15px;
+          position: relative;
+          font-size: 17px;
+          display: block;
+
+          &:hover {
+            &::before {
+              width: 100%;
+            }
+          }
+          &::before {
+            content: "";
+            position: absolute;
+
+            width: 0%;
+            bottom: -5px;
+            left: 0;
+            transition: 0.5s ease-in-out;
+            height: 2px;
+            background-color: black;
+          }
+        }
+      }
+    }
+  }
+}
+.icon {
+  display: flex;
+  justify-content: end;
+  font-size: 20px;
+  display: none;
+
+  i {
+    padding: 10px;
+    cursor: pointer;
+    transition: 300ms ease;
+
+    &:hover {
+      color: var(--icon-clr-hover);
+    }
+  }
+}
+// header end//
+#contact {
+  background-color: #f4f7fc;
+  .text-img {
+    position: relative;
+    padding-top: 40px;
+    .text {
+      h1 {
+        padding-block: 12px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      h6 {
+        font-size: 15px;
+      }
+    }
+  }
+  .box {
+    height: 40vh;
+
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    input {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      border: none;
+      font-size: 15px;
+    }
+    .inp-icon {
+      position: relative;
+      input {
+        padding-left: 50px;
+      }
+      i {
+        position: absolute;
+
+        left: 10px;
+        transform: translateY(-50%);
+        font-size: 20px;
+      }
+    }
+  }
+}
+#contact-footer {
+  background-color: #cad5eaa4;
+  .boxes {
+    padding-top: 20px;
+    .logo {
+      width: 10%;
+      margin-top: -10px;
+    }
+    .nav-menu {
+      ul {
+        li {
+          a {
+            text-decoration: none;
+            color: black;
+            font-family: "Cinzel", serif;
+            padding-inline: 5px;
+            position: relative;
+            font-size: 8px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  #adress {
+    .contact-info {
+      h3 {
+        font-size: 10px;
+      }
+      ul {
+        li {
+          font-size: 10px;
+        }
+      }
+    }
+    .social-links {
+      h3 {
+        font-size: 10px;
+      }
+      ul {
+        li {
+          list-style: none;
+          a {
+            color: black;
+            // padding-block: 8px;
+            display: block;
+
+            i {
+              // padding: 5px;
+              font-size: 10px;
+
+              &:hover {
+                color: var(--icon-clr-hover);
+              }
+            }
+          }
+        }
+      }
+     
+    }
+    .disclaimer{
+      p{
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 992px) {
+  * {
+    font-family: "Cinzel", serif;
+  }
+  body {
+    background-color: white;
+  }
+
+  #contact-header {
+    // position: fixed;
+    background-color: #f4f7fc;
+
+    .logo {
+      width: 9%;
+      margin-top: -10px;
+    }
+    .nav-menu {
+      display: block;
+      ul {
+        li {
+          a {
+            text-decoration: none;
+            color: black;
+            font-family: "Cinzel", serif;
+            padding-inline: 15px;
+            position: relative;
+            font-size: 17px;
+            display: block;
+
+            &:hover {
+              &::before {
+                width: 100%;
+              }
+            }
+            &::before {
+              content: "";
+              position: absolute;
+
+              width: 0%;
+              bottom: -5px;
+              left: 0;
+              transition: 0.5s ease-in-out;
+              height: 2px;
+              background-color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+  .icon {
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+
+    i {
+      padding: 10px;
+      cursor: pointer;
+      transition: 300ms ease;
+
+      &:hover {
+        color: var(--icon-clr-hover);
+      }
+    }
+  }
+  // header end
+  #contact {
+    background-color: #f4f7fc;
+    .text-img {
+      position: relative;
+      padding-top: 50px;
+      .text {
+        h1 {
+          width: 50%;
+          padding-block: 12px;
+          font-weight: bold;
+          font-size: 50px;
+        }
+      }
+    }
+    .box {
+      background-color: white;
+      position: absolute;
+      width: 50%;
+      height: 70vh;
+      bottom: 25%;
+      right: -30px;
+
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+
+      input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        align-items: center;
+        border: none;
+        font-size: 35px;
+      }
+      .inp-icon {
+        position: relative;
+        input {
+          padding-left: 50px;
+        }
+        i {
+          position: absolute;
+          top: 50%;
+          left: 10px;
+          transform: translateY(-50%);
+          font-size: 28px;
+        }
+      }
+    }
+  }
+  #contact-footer {
+    background-color: #cad5eaa4;
+    // margin-top: 20px;
+    .boxes {
+      padding-top: 20px;
+      .logo {
+        width: 9%;
+        margin-top: -10px;
+      }
+      .nav-menu {
+        ul {
+          li {
+            a {
+              text-decoration: none;
+              color: black;
+              font-family: "Cinzel", serif;
+              padding-inline: 15px;
+              position: relative;
+              font-size: 17px;
+              display: block;
+
+              &:hover {
+                &::before {
+                  width: 100%;
+                }
+              }
+              &::before {
+                content: "";
+                position: absolute;
+
+                width: 0%;
+                bottom: -5px;
+                left: 0;
+                transition: 0.5s ease-in-out;
+                height: 2px;
+                background-color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+    #adress {
+      .contact-info {
+        h3 {
+          font-size: 20px;
+        }
+        ul {
+          li {
+            font-size: 15px;
+          }
+        }
+      }
+      .social-links {
+        h3{
+          font-size: 20px;
+        }
+        ul {
+          li {
+            list-style: none;
+            a {
+              color: black;
+              padding-block: 8px;
+              display: block;
+
+              i {
+                padding: 10px;
+                
+                &:hover {
+                  color: var(--icon-clr-hover);
+                }
+              }
+            }
+          }
+        }
+      }
+      .disclaimer{
+        p{
+          font-size: 15px;
+        }
+      }
+    }
+  
+  }
+
+}

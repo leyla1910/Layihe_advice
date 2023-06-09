@@ -1,0 +1,798 @@
+* {
+  font-family: "Cinzel", serif;
+}
+body {
+  background-image: url("https://advice.ancorathemes.com/wp-content/uploads/2023/01/counseling-page-vector.png");
+}
+#home-header {
+  // position: fixed;
+  background-color: #fbf6f28e;
+
+  .logo {
+    width: 30%;
+    margin-top: -10px;
+  }
+  .nav-menu {
+    display: none;
+    ul {
+      li {
+        a {
+          text-decoration: none;
+          color: black;
+          font-family: "Cinzel", serif;
+          padding-inline: 15px;
+          position: relative;
+          font-size: 17px;
+          display: block;
+
+          &:hover {
+            &::before {
+              width: 100%;
+            }
+          }
+          &::before {
+            content: "";
+            position: absolute;
+
+            width: 0%;
+            bottom: -5px;
+            left: 0;
+            transition: 0.5s ease-in-out;
+            height: 2px;
+            background-color: black;
+          }
+        }
+      }
+    }
+  }
+  .nav-right {
+  }
+}
+.icon {
+  // display: flex;
+  // justify-content: end;
+  font-size: 20px;
+  display: none;
+
+  i {
+    padding: 10px;
+    cursor: pointer;
+    transition: 300ms ease;
+
+    &:hover {
+      color: var(--icon-clr-hover);
+    }
+  }
+}
+// home-header end
+#blog {
+  width: 100%;
+  // height: 100vh;
+  background-color: #fbf6f28e;
+
+  // background-image: url("https://advice.ancorathemes.com/wp-content/uploads/2023/01/counseling-page-vector.png");
+
+  .boxes {
+    .text {
+      font-family: "Cinzel", serif;
+      margin-top: 15%;
+      h6 {
+        // padding-block: 10px;
+        font-size: 9px;
+      }
+      h1 {
+        padding-block: 10px;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      p {
+        width: 75%;
+        font-size: 8px;
+      }
+      .button {
+        a {
+          text-decoration: none;
+          font-family: "Cinzel", serif;
+          font-size: 10px;
+          border: 2px solid #5b4b50;
+          color: #5b4b50;
+          padding: 10px 15px;
+          margin: 5px 0;
+          display: inline-block;
+        }
+      }
+    }
+    .photo {
+      display: block;
+      img {
+        margin-top: 20%;
+        position: relative;
+        width: 80%;
+      }
+      .imza {
+        position: absolute;
+        width: 20%;
+        left: 38%;
+        top: 11%;
+      }
+    }
+  }
+}
+// blog end //
+#nd-page {
+  // width: 100%;
+  // height: 100vh;
+  // background-color: #FFFFFF;
+  background-color: #fbf6f28e;
+
+  .boxes {
+    .box {
+      border: 2px solid #eae4e2;
+      margin-block: 5px;
+      img {
+        opacity: 0.5;
+
+        cursor: pointer;
+      }
+    }
+  }
+}
+// nd-page end//
+#photo-page {
+  padding-top: 10px;
+  background-color: #fbf6f28e;
+
+  .packets {
+    align-items: center;
+
+    .left-page {
+      .text {
+        font-weight: bold;
+        // padding: 20px;
+        h1 {
+          font-size: 8px;
+        }
+        h6 {
+          font-size: 7px;
+        }
+      }
+      .pht {
+        display: flex;
+      }
+    }
+
+    .right-page {
+      .pht {
+        display: flex;
+      }
+      .text {
+        padding: 20px;
+        // text-align: center;
+        color: #5b4b50;
+        display: flex;
+        // justify-content: end;
+        // width: 100%;
+        p {
+          font-size: 5px;
+        }
+      }
+    }
+  }
+}
+// photo-page end//
+#number {
+  background-color: rgb(242, 240, 237);
+  .boxes {
+    padding: 30px;
+    .box {
+      text-align: center;
+
+      h5 {
+        font-size: 10px;
+      }
+      h1 {
+        font-weight: bold;
+        font-size: 30px;
+        color: rgba(41, 39, 39, 0.785);
+      }
+    }
+  }
+}
+// number end//
+#pht-page {
+  background-color: #fbf6f28e;
+  .boxes {
+    .left-page {
+      .text {
+        padding-block: 13px;
+        h5 {
+          font-size: 10px;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            width: 50%;
+            left: 40px;
+          }
+        }
+        h1 {
+          font-weight: bold;
+          padding-top: 5px;
+          font-size: 15px;
+        }
+      }
+      .pht {
+      }
+      .text2 {
+        padding-block: 5px;
+        h5 {
+          font-size: 10px;
+          padding-top: 5px;
+        }
+        h1 {
+          font-weight: bold;
+          padding-top: 5px;
+          font-size: 15px;
+        }
+      }
+    }
+    .right-page {
+      .pht {
+        padding-top: 10px;
+      }
+      .text {
+        padding-block: 20px;
+        h5 {
+          font-size: 15px;
+        }
+        h1 {
+          font-weight: bold;
+          padding-top: 13px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+// pht-page end //
+#pht-play {
+  .photo {
+    position: relative;
+  }
+  .txt {
+    // width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    p {
+      border: 2px solid white;
+      border-radius: 100%;
+      padding: 10px;
+      font-size: 5px;
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+// pht-play end //
+#contact-us {
+  width: 100%;
+  height: 20vh;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-image: url("https://advice.ancorathemes.com/wp-content/uploads/2023/01/form-bg.png");
+  .boxes {
+    .buton {
+      align-items: center;
+      text-align: center;
+
+      a {
+        // align-items: center;
+
+        text-decoration: none;
+        list-style: none;
+        color: #1e0a09;
+        border: 1px solid #1e0a09;
+        padding: 8px 10px;
+        font-size: 8px;
+        margin-top: 5px;
+        display: inline-block;
+      }
+    }
+    .photo {
+      left: 50%;
+      top: 50%;
+    }
+    .text {
+      text-align: center;
+
+      align-items: center;
+      text-align: center;
+      padding-top: 40px;
+      // left: 50%;
+
+      h1 {
+        padding-block: 5px;
+        font-size: 14px;
+      }
+      h5 {
+        font-size: 10px;
+      }
+      h2 {
+        font-size: 9px;
+      }
+    }
+  }
+}
+#home-footer {
+  width: 100%;
+  height: 15vh;
+
+  background-color: #f2f0ec;
+  .boxes {
+    .text {
+      width: 50%;
+      h1 {
+        padding-block: 8%;
+        font-size: 12px;
+      }
+    }
+    .menu {
+      .nav-menu {
+        ul {
+          li {
+            a {
+              text-decoration: none;
+              color: black;
+              font-family: "Cinzel", serif;
+              padding-inline: 5px;
+              position: relative;
+              font-size: 12px;
+              display: block;
+            }
+          }
+        }
+      }
+      .icon {
+        display: flex;
+        justify-content: end;
+        font-size: 12px;
+
+        i {
+          padding: 3px;
+          margin: 5px;
+          cursor: pointer;
+          transition: 300ms ease;
+
+          &:hover {
+            color: var(--icon-clr-hover);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  * {
+    font-family: "Cinzel", serif;
+  }
+
+  body {
+    background-image: url("https://advice.ancorathemes.com/wp-content/uploads/2023/01/counseling-page-vector.png");
+    //  background-size: cover;
+    //  background-position: center;
+    //  background-repeat: no-repeat;
+  }
+  #home-header {
+    // position: fixed;
+    background-color: #fbf6f28e;
+
+    .logo {
+      width: 9%;
+      margin-top: -10px;
+    }
+    .nav-menu {
+      display: block;
+      ul {
+        li {
+          a {
+            text-decoration: none;
+            color: black;
+            font-family: "Cinzel", serif;
+            padding-inline: 15px;
+            position: relative;
+            font-size: 17px;
+            display: block;
+
+            &:hover {
+              &::before {
+                width: 100%;
+              }
+            }
+            &::before {
+              content: "";
+              position: absolute;
+
+              width: 0%;
+              bottom: -5px;
+              left: 0;
+              transition: 0.5s ease-in-out;
+              height: 2px;
+              background-color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+  .nav-right {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .icon {
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+
+    i {
+      padding: 10px;
+      cursor: pointer;
+      transition: 300ms ease;
+
+      &:hover {
+        color: var(--icon-clr-hover);
+      }
+    }
+  }
+  // home-header end
+
+  #blog {
+    width: 100%;
+    // height: 100vh;
+    background-color: #fbf6f28e;
+
+    // background-image: url("https://advice.ancorathemes.com/wp-content/uploads/2023/01/counseling-page-vector.png");
+
+    .boxes {
+      .text {
+        font-family: "Cinzel", serif;
+        margin-top: 15%;
+        h6 {
+          // padding-block: 10px;
+          font-size: 20px;
+        }
+        h1 {
+          padding-block: 20px;
+          font-weight: bold;
+          font-size: 35px;
+        }
+        p {
+          width: 75%;
+          font-size: 18px;
+        }
+        .button {
+          a {
+            text-decoration: none;
+            font-family: "Cinzel", serif;
+            font-size: 18px;
+            border: 2px solid #5b4b50;
+            color: #5b4b50;
+            padding: 15px 20px;
+            margin-top: 30px;
+            display: inline-block;
+            transition: 0.5s ease-in-out;
+
+            &:hover {
+              color: white;
+              background-color: #5b4b50;
+            }
+          }
+        }
+      }
+      .photo {
+        // display: block;
+        img {
+          margin-top: 20%;
+          position: relative;
+          width: 85%;
+        }
+        .imza {
+          position: absolute;
+          width: 20%;
+          left: 25%;
+          top: 35%;
+        }
+      }
+    }
+  }
+
+  #nd-page {
+    // width: 100%;
+    // height: 100vh;
+    // background-color: #FFFFFF;
+    background-color: #fbf6f28e;
+
+    .boxes {
+      padding-top: 70px;
+      .box {
+        border: 2px solid #eae4e2;
+        img {
+          opacity: 0.5;
+          transition: 300ms ease;
+          cursor: pointer;
+        }
+        &:hover {
+          img {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  // nd-page end //
+
+  #photo-page {
+    padding-top: 6rem;
+    background-color: #fbf6f28e;
+
+    .packets {
+      .left-page {
+        .text {
+          font-weight: bold;
+          padding: 50px;
+          h1 {
+            font-size: 43px;
+          }
+          h6 {
+            font-size: 20px;
+          }
+        }
+        .pht {
+          display: flex;
+        }
+      }
+
+      .right-page {
+        .pht {
+          display: flex;
+        }
+        .text {
+          padding: 60px;
+          // text-align: center;
+          color: #5b4b50;
+          display: flex;
+          justify-content: end;
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  // ==============//
+
+  #number {
+
+    background-color: rgb(242, 240, 237);
+    .boxes {
+      margin-top: 0px;
+      padding: 80px;
+      .box {
+        text-align: center;
+
+        h5 {
+          font-size: 15px;
+        }
+        h1 {
+          font-weight: bold;
+          font-size: 60px;
+          color: rgba(41, 39, 39, 0.785);
+        }
+      }
+    }
+  }
+  // number end//
+
+  #pht-page {
+    background-color: #fbf6f28e;
+    .boxes {
+      .left-page {
+        .text {
+          padding-block: 50px;
+          h5 {
+            font-size: 14px;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              width: 50%;
+              left: 40px;
+            }
+          }
+          h1 {
+            font-weight: bold;
+            padding-top: 17px;
+            font-size: 35px;
+          }
+        }
+        .pht {
+        }
+        .text2 {
+          padding-block: 40px;
+          h5 {
+            font-size: 14px;
+          }
+          h1 {
+            font-weight: bold;
+            padding-top: 17px;
+            font-size: 35px;
+          }
+        }
+      }
+      .right-page {
+        .pht {
+          padding-top: 50%;
+        }
+        .text {
+          padding-block: 40px;
+          h5 {
+            font-size: 14px;
+          }
+          h1 {
+            font-weight: bold;
+            padding-top: 17px;
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }
+  // pht-page end//
+
+  #pht-play {
+    .photo {
+      position: relative;
+    }
+    .txt {
+      // width: 30%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      p {
+        border: 2px solid white;
+        border-radius: 100%;
+        padding: 40px;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+  // pht-play end //
+  #contact-us {
+    width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-image: url("https://advice.ancorathemes.com/wp-content/uploads/2023/01/form-bg.png");
+    .boxes {
+      .buton {
+        align-items: center;
+        text-align: center;
+
+        a {
+          // align-items: center;
+
+          text-decoration: none;
+          list-style: none;
+          color: #1e0a09;
+          border: 2px solid #1e0a09;
+          padding: 20px 50px;
+          transition: 1s ease;
+          font-size: 15px;
+          &:hover {
+            background-color: #3b1310;
+            color: white;
+          }
+        }
+      }
+      .photo {
+        left: 50%;
+        top: 50%;
+      }
+      .text {
+        text-align: center;
+
+        align-items: center;
+        text-align: center;
+        padding-block: 70px;
+        // left: 50%;
+
+        h1 {
+          padding-block: 20px;
+          font-size: 40px;
+        }
+        h5 {
+          font-size: 20px;
+        }
+        h2 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  // contact-us //
+  #home-footer {
+    width: 100%;
+    height: 50vh;
+
+    background-color: #f2f0ec;
+    .boxes {
+      .text {
+        width: 50%;
+        h1 {
+          padding-block: 8%;
+          font-size: 40px;
+        }
+      }
+      .menu {
+        .nav-menu {
+          ul {
+            li {
+              a {
+                text-decoration: none;
+                color: black;
+                font-family: "Cinzel", serif;
+                padding-inline: 10px;
+                position: relative;
+                font-size: 16px;
+                display: block;
+
+                &:hover {
+                  &::before {
+                    width: 100%;
+                  }
+                }
+                &::before {
+                  content: "";
+                  position: absolute;
+
+                  width: 0%;
+                  bottom: -5px;
+                  left: 0;
+                  transition: 0.5s ease-in-out;
+                  height: 2px;
+                  background-color: black;
+                }
+              }
+            }
+          }
+        }
+        .icon {
+          display: flex;
+          justify-content: end;
+          font-size: 20px;
+
+          i {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+            transition: 300ms ease;
+
+            &:hover {
+              color: var(--icon-clr-hover);
+            }
+          }
+        }
+      }
+    }
+  }
+}
